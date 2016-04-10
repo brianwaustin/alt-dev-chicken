@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>Virtual Delores</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (max-width: 770px), only screen and (max-device-width: 770px)" href="css/small-device.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<script>
+  $(document).ready(function() {
+
+    $("div").on("click", function() {
+      fireTheChicken();
+
+    });
+
+    $("div").on("tap", function() {
+      fireTheChicken();
+    });
+
+    function fireTheChicken() {
+      /* Some men squeeze pipes, we squeeze the chicken */
+      var x = document.getElementById("callOfTheChicken");
+      x.play();
+    }
+
+  });
+</script>
+
+<body>
+  <div class="devChicken">
+    <img class="delores" src="images/delores.png" />
+  </div>
+
+  <audio id="callOfTheChicken">
+    <source src="media/delores1.ogg" type="audio/ogg"> Your browser does not support the audio element.
+  </audio>
+
+</body>
+
+</html>
